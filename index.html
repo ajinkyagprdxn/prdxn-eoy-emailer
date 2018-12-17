@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">    
     <title>PRDXN EOY</title>
     <style type="text/css">
-    body { margin: 0; }   
+    body { margin: 0;padding: 0; }   
     html {
       -webkit-font-smoothing:antialiased;
       -moz-font-smoothing:antialiased;
       -o-font-smoothing:antialiased;      
     }
-    * {
+    * {      
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
       -moz-text-size-adjust: 100%;
@@ -21,7 +21,7 @@
     @media screen and (max-width: 480px) {                            
         .container { width: 440px!important; }
         .mobilewidth {
-          width: 100%!important;            
+          width: 300px!important;
           height: auto!important;
           display: block!important;
         }
@@ -31,6 +31,24 @@
         }
         .halfwidth {
           width: 300px!important;
+          height: auto!important;
+          margin: 0 auto;
+          display: block!important; 
+        }
+        .counttable {
+          width: 440px!important;
+          height: auto!important;
+          margin: 0 auto;
+          display: block!important; 
+          background-position: left!important;
+        }
+        .countsinglecol {
+          width: 440px!important;
+          display: block!important;
+          margin: 0 auto;
+        }
+        .width440 {
+          width: 440px!important;
           height: auto!important;
           margin: 0 auto;
           display: block!important; 
@@ -53,6 +71,7 @@
         .width265 { width: 265px!important; }
         .rempadt { padding-top: 0px!important; }
         .rempadr { padding-right: 0px!important; }
+        .rempadb { padding-bottom: 0px!important; }
         .rempadl { padding-left: 0px!important; }
         .addpadr3 {
           padding-right: 3px!important;         
@@ -69,13 +88,20 @@
           padding-top: 10px!important;
           padding-bottom: 10px!important;
         }
-        .addpadt15 { 
-          height: 46px!important;
-          padding-top: 20px!important; 
+        .addpadtb15 {
+          padding-top: 15px!important;
+          padding-bottom: 15px!important;
+        }
+        .addpadt30 {           
+          padding-top: 30px!important; 
+        }
+        .addpadt40 {           
+          padding-top: 40px!important; 
         }
         .addmarbot { margin-bottom: 30px!important; }
         .addpadbot { padding-bottom: 30px!important; }       
         .addpadbot5 { padding-bottom: 5px!important; }
+        .addpadbot10 { padding-bottom: 10px!important; }
         .addpadbot28 { padding-bottom: 28px!important; }
         .addpadr30 { padding-right: 30px!important; }
         .logo {
@@ -89,6 +115,32 @@
           display: block;
           text-align: center!important;        
         }
+        .titlefsize { font-size: 26px!important; }
+        .technodouble {
+          width: 196px!important;
+          display: inline-block!important;
+          padding-left: 10px!important;
+          padding-right: 10px!important;
+        }        
+        .technosingle {  
+          width: 300px!important;
+          display: block!important;
+          padding-left: 70px!important;
+          padding-right: 70px!important; 
+          margin: 0 auto;
+        }
+        .successrp {
+          width: 300px!important;
+          padding-left: 0px!important;
+          padding-right: 0px!important;
+        }
+        .clientsdouble {
+          width: 216px!important;
+          display: inline-block!important;          
+          padding-top: 30px!important;
+          padding-bottom: 30px!important;
+          margin: 0 auto;
+        }
         .desktop-img { display: none!important; }
         .resp-img-cycle { 
           width: 82%!important;
@@ -101,8 +153,28 @@
           margin: 0 auto;
           display: block!important; 
         } 
+        .soulrquote {
+          width: 340px!important;
+          padding-left: 50px!important;
+          padding-right: 50px!important;
+          padding-bottom: 20px!important;
+          line-height: 1.4;
+        }
+        .oc-double {
+          width: 136px!important;
+          display: inline-block!important;
+          padding-left: 40px!important;
+          padding-right: 40px!important;
+        }
+        .oc-single {
+          width: 170px!important;
+          display: block!important;
+          padding-left: 135px!important;
+          padding-right: 135px!important;
+          margin: 0 auto;
+        }
         .single-column{
-          width: 100%;
+          width: 100%!important;
           display: block!important;
         }
         .marauto {
@@ -140,20 +212,20 @@
       <!-- Starting Header section of emailer -->
       <tr>
         <td>
-         <table width="600" class="header" cellpadding="0" cellspacing="0" border="0" align="center">
+         <table width="600" class="width440 marauto" cellpadding="0" cellspacing="0" border="0" align="center">
            <!-- Logo starts here -->
             <tr>
-              <td  width="100%" class="logo" style="display: block;padding-top: 44px;padding-bottom: 31px;padding-left: auto;padding-right: auto;text-align: center;">
-                <a href="#FIXME" title="PRDXN" target="_blank">
-                    <img src="images/1.png" height="20" width="85" alt="Prdxn">
+              <td  width="100%" class="logo marauto" style="display: block;padding-top: 44px;padding-bottom: 31px;padding-left: auto;padding-right: auto;text-align: center;">
+                <a href="https://prdxn.com" title="PRDXN" target="_blank">
+                    <img src="images/1.jpg" height="20" width="85" alt="Prdxn">
                 </a>
-              </td>  
+              </td>
             </tr>
             <!-- Logo Ends here -->
             <!-- Thank you text starts -->
             <tr>
               <td width="600" style="text-align: center;padding-bottom: 11px;">
-                <span style="font-size: 34px;font-family: sans-serif; font-weight: 800;display: block;">
+                <span class="titlefsize" style="font-size: 34px;font-family: sans-serif; font-weight: 800;display: block;">
                     Thank You!
                 </span>
               </td>
@@ -168,14 +240,12 @@
             <!-- blue underline ends -->
             <!-- header content starts here -->
             <tr>
-              <td class="header_content" style="display: block; font-family: sans-serif;font-size: 14px;line-height: 25px;color: #9a9a9a;text-align: center;padding-bottom: 20px; width: 80%;
-                    padding-left: 10%;padding-right: 10%;">
+              <td class="width440 rempadr rempadl marauto addpadbot10" style="display: block; font-family: sans-serif;font-size: 14px;line-height: 25px;color: #9a9a9a;text-align: center;padding-bottom: 20px; width: 80%; padding-left: 10%;padding-right: 10%;">
                 Thank you for your support - either directly or indirectly - in 2018!
               </td>
             </tr>
             <tr>
-              <td class="header_content" style="display: block; font-family: sans-serif;font-size: 14px;line-height: 1.7;color: #9a9a9a;text-align: center;padding-bottom: 52px; width: 74%;
-                    padding-left: 13%;padding-right: 13%;">
+              <td class="width440 rempadr rempadl marauto addpadbot10" style="display: block; font-family: sans-serif;font-size: 14px;line-height: 1.7;color: #9a9a9a;text-align: center;padding-bottom: 52px; width: 74%; padding-left: 13%;padding-right: 13%;">
                 We've had a great year of growth. And a great year of working towards our #1 goal of WOW'ing Clients & fellow team-members, which we'll continue to work at in 2019 and beyond!
               </td>
             </tr>
@@ -187,26 +257,26 @@
       <!-- Count section starts here -->
       <tr>
         <td>
-          <table class="achivements" width="600" height="200" cellpadding="0" cellspacing="0" border="0" background="https://gallery.mailchimp.com/115d53d18e1ad0952fd553ec4/images/66c9bf82-5e73-46d7-9078-d631ab2a6467.png" style="height: 200px;background-size: cover; background-position: center; background-image: url('images/2.jpg');filter: contrast(80%);">
+          <table class="counttable marauto" width="600" height="200" cellpadding="0" cellspacing="0" border="0" background="https://gallery.mailchimp.com/115d53d18e1ad0952fd553ec4/images/66c9bf82-5e73-46d7-9078-d631ab2a6467.jpg" style="height: 200px;background-size: cover; background-position: center; background-image: url('images/2.jpg');filter: contrast(80%);">
             <tr>
-              <td>
-                <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+              <td class="countsinglecol addpadtb15">
+                <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
                   <tr>
-                    <td>
+                    <td class="countsinglecol">
                       <span class="percentage" style="font-size: 30px;color: #fff;font-family: sans-serif;font-weight: 900;padding-bottom: 3px;display: block;">97%</span>
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+                    <td class="countsinglecol">
+                      <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
                           <tr>
-                            <td>
-                                <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family:sans-serif; font-weight: 700;">Client</span>
+                            <td class="countsinglecol">
+                              <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family:sans-serif; font-weight: 700;">Client</span>
                             </td>
                           </tr>
                           <tr>
-                            <td>
-                                <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family:sans-serif; font-weight: 700;">Retention</span>
+                            <td class="countsinglecol">
+                              <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family:sans-serif; font-weight: 700;">Retention</span>
                             </td>
                           </tr>
                       </table>
@@ -214,48 +284,48 @@
                   </tr>
                 </table>
               </td>
-              <td>
-                <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+              <td class="countsinglecol addpadtb15">
+                <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
                   <tr>
-                      <td>
-                        <span class="percentage" style="font-size: 30px; display:block;color: #fff;font-family: sans-serif;font-weight: 900;padding-bottom: 3px;">+43%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
-                          <tr>
-                            <td>
-                                <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family: sans-serif; font-weight: 700;">New Client</span>
-                            </td>
-                          </tr>                          
-                          <tr>
-                            <td>
-                                <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family: sans-serif; font-weight: 700;">Acquisition</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                </table>
-              </td>
-              <td>
-                <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
-                  <tr>
-                    <td>
-                      <span class="percentage" style="font-size: 30px;color: #fff;font-family: sans-serif;font-weight: 900;padding-bottom: 3px;display: block;">+20%</span>
+                    <td class="countsinglecol">
+                      <span class="percentag" style="font-size: 30px; display:block;color: #fff;font-family: sans-serif;font-weight: 900;padding-bottom: 3px;">+43%</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <table width="200" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+                      <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+                        <tr>
+                          <td class="countsinglecol">
+                            <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family: sans-serif; font-weight: 700;">New Client</span>
+                          </td>
+                        </tr>                          
+                        <tr>
+                          <td class="countsinglecol">
+                            <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family: sans-serif; font-weight: 700;">Acquisition</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="countsinglecol addpadtb15" >
+                <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+                  <tr>
+                    <td class="countsinglecol">
+                      <span class="percentage" style="font-size: 30px;color: #fff;font-family: sans-serif;font-weight: 900;padding-bottom: 3px;display: block;">+20%</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="countsinglecol">
+                      <table width="200" class="countsinglecol" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
                           <tr>
-                            <td>
+                            <td class="countsinglecol">
                               <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family:sans-serif ;font-weight: 700;">Team</span>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="countsinglecol">
                               <span class="growth_text" style="font-size: 14px;text-align: center;color: #fff;font-family: sans-serif; font-weight: 700;">Growth</span>
                             </td>
                           </tr>
@@ -272,11 +342,11 @@
       <!-- Technology section starts here -->
       <tr>
         <td>
-          <table width="600" cellpadding="0" valign="center" cellspacing="0" border="0" style="text-align: center;display: block;"> 
+          <table width="600" class="width440 marauto" cellpadding="0" valign="center" cellspacing="0" border="0" style="text-align: center;display: block;"> 
             <!-- Technology text starts -->
             <tr>
-              <td width="600" style="text-align: center;padding-bottom: 11px;padding-top: 60px;">
-                <span style="font-size: 33px;font-family: sans-serif; font-weight: 800;display: block;">
+              <td width="600" class="width440 marauto" style="text-align: center;padding-bottom: 11px;padding-top: 60px;">
+                <span class="titlefsize" style="font-size: 33px;font-family: sans-serif; font-weight: 800;display: block;">
                     Technology That Excited Us
                 </span>
               </td>
@@ -284,27 +354,27 @@
             <!-- Technology text ends -->
             <!-- blue underline starts -->
             <tr>
-              <td width="600" style="text-align: center;height: 3px;padding-bottom: 10px; display: block;">
+              <td width="600" class="width440 marauto" style="text-align: center;height: 3px;padding-bottom: 10px; display: block;">
                 <span class="blue_underline" style="display: inline-block;background-color: #1f95f2;height: 2px;width: 92px;text-align: center;"></span>
               </td>
             </tr>
             <!-- blue underline ends -->
             <!-- header content starts here -->
             <tr>
-              <td class="header_content" style="display: block; font-family: sans-serif;font-size: 13px;line-height: 1.6;color: #9a9a9a;text-align: center;padding-bottom: 52px; width: 74%; padding-left: 13%;padding-right: 13%; padding-top: 10px;">
+              <td class="width440 marauto rempadl rempadr" class="header_content" style="display: block; font-family: sans-serif;font-size: 13px;line-height: 1.6;color: #9a9a9a;text-align: center;padding-bottom: 52px; width: 74%; padding-left: 13%;padding-right: 13%; padding-top: 10px;">
                 Our team relishes any and all challenges, especially those that enable them to explore new technologies and learn something new.
               </td>
             </tr>
             <!-- headr content ends here -->
             <tr>
               <td>
-                <table width="600" cellpadding="0" align="left" cellspacing="0" border="0" style="text-align: center;display: block;">
+                <table class="width440 marauto" width="600" cellpadding="0" align="left" cellspacing="0" border="0" style="text-align: center;display: block;">
                   <tr>
-                    <td style="padding-left: 60px; padding-right: 60px;">
-                      <table width="120">
+                    <td class="technodouble" style="padding-left: 60px; padding-right: 60px;">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/3.png">
+                            <img src="images/3.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -329,11 +399,11 @@
                         </tr>
                       </table>
                     </td>
-                    <td style="padding-right: 30px;">
-                      <table width="120">
+                    <td class="technodouble" style="padding-right: 30px;">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/4.png">
+                            <img src="images/4.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -358,11 +428,11 @@
                         </tr>
                       </table>
                     </td>
-                    <td style="padding-right: 30px">
-                      <table width="120">
+                    <td class="technosingle" valign="top" style="padding-right: 30px">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/5.png">
+                            <img src="images/5.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -376,24 +446,19 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            <a href="#FIXME" target="_blank" title="Arduino &amp; BLE Devices" style="font-family: sans-serif;font-size: 13px; color: #1f95f2;text-decoration: none; display: block;">Arduino &amp; BLE Devices</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td width="100%" style="text-align: center;height: 3px;padding-bottom: 30px;display: block;">
-                            <span class="blue_underline" style="display: inline-block;background-color: #1f95f2;height: 2px;width: 146px;text-align: center;"></span>
+                          <td style="font-family: sans-serif;font-size: 13px; color: #929292;">
+                            Arduino &amp; BLE Devices
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding-left: 60px; padding-right: 60px;">
-                      <table width="120">
+                    <td class="technodouble" style="padding-left: 60px; padding-right: 60px;">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/6.png">
+                            <img src="images/6.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -418,11 +483,11 @@
                         </tr>
                       </table>
                     </td>                    
-                    <td style="padding-right: 30px">
-                      <table width="120">
+                    <td class="technodouble" style="padding-right: 30px">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/7.png">
+                            <img src="images/7.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -447,11 +512,11 @@
                         </tr>
                       </table>
                     </td>
-                    <td style="padding-right: 30px;">
-                      <table width="120">
+                    <td class="technosingle" style="padding-right: 30px;">
+                      <table class="marauto" width="120">
                         <tr>
                           <td>
-                            <img src="images/8.png">
+                            <img src="images/8.jpg">
                           </td>
                         </tr>
                         <tr>
@@ -486,12 +551,12 @@
       <!-- Technology section ends here -->
       <!-- Success section starts here -->
       <tr>
-        <td width="600">
-          <table width="600" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
+        <td class="width440 marauto" width="600">
+          <table class="width440 marauto" width="600" cellpadding="0" valign="center" cellspacing="0" border="0" align="center" style="text-align: center;">
             <!-- Sucess Stories text starts -->
             <tr>
-              <td width="600" style="text-align: center;">
-                <span style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 11px;">
+              <td class="width440 marauto" width="600" style="text-align: center;">
+                <span class="titlefsize" style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 11px;">
                     Sucess Stories!
                 </span>
               </td>
@@ -499,38 +564,38 @@
             <!-- Sucess Stories text ends -->
             <!-- blue underline starts -->
             <tr>
-              <td width="100%" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
+              <td class="width440 marauto" width="600" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
                 <span class="blue_underline" style="display: inline-block;background-color: #1f95f2;height: 2px;width: 92px;text-align: center;"></span>
               </td>
             </tr>
             <!-- blue underline ends -->
             <!-- Product 1 Info: left image text right section starts -->
             <tr>
-              <td style="border-bottom: 2px solid #cccccc; padding-top: 21px;">
-                <table width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
+              <td class="halfwidth marauto" style="border-bottom: 2px solid #cccccc; padding-top: 21px;">
+                <table class="halfwidth marauto" width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
                   <tr>
                     <!-- left side image starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
+                    <td class="halfwidth marauto" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
                         <tr>
                           <td>
                             <img src="images/9.jpg" height="300px" width="300px" alt="Success Stories" />
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="text-align: left; padding-left: 30px;padding-top: 30px;">
+                          <td class="successrp" width="270" style="text-align: left; padding-left: 30px;padding-top: 30px;">
                             <span style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 24px;line-height: 1.6;">
                               American Society of Anesthesiologists (ASA)
                             </span>
                           </td>                            
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 25px; padding-left: 30px;">
+                          <td class="successrp" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 25px; padding-left: 30px;">
                             <span style="color: #000; font-weight: 700;">Type of Engagement: </span>Project.
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-left: 30px;">
+                          <td class="successrp rempadb" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-left: 30px;">
                             <span style="color: #000; font-weight: 700;">The Client request: </span>Establish a plan for, as well as execute, the mapping and migration of data
                           </td>
                         </tr>
@@ -538,25 +603,25 @@
                     </td>
                     <!-- left side image ends -->
                     <!-- right side text starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">
+                    <td class="halfwidth marauto" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">
                         <tr>                        
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-top:10px;padding-left: 30px;  ">
+                          <td class="successrp rempadt" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-top:10px;padding-left: 30px;  ">
                              from an old system (technology: Raiser's Edge) to a new one (technology: Personify).
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-left: 30px;  ">
+                          <td class="successrp" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-left: 30px;  ">
                             <span style="color: #000; font-weight: 700;">Resounces engaged: </span>Database Engineers, Manual QA/Auditors, Project Manager.
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left: 30px;    ">
+                          <td class="successrp" width="270" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left: 30px;    ">
                             <span>How did PRDXN help?</span>
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left: 30px; ">
+                          <td class="successrp" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left: 30px; ">
                             ASA's in-house project management and technology resources needed to remain focused on other projects of urgency, and requested the extra support from PRDXN to ensure this project wasn't further delayed. (Prior to this project, ASA had already established a relationship with PRDXN via an ongoing QA/Testing engagement, where PRDXN QA/Testing resources support various other active ASA projects/products.)
                           </td>
                         </tr>
@@ -570,58 +635,58 @@
             <!-- Product 1 Info: left image text right section ends -->
             <!-- Product 2 Info: right image text left section starts -->
             <tr>
-              <td style="border-bottom: 2px solid #cccccc; padding-top: 60px;">
-                <table width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
+              <td class="halfwidth marauto addpadt40" style="border-bottom: 2px solid #cccccc; padding-top: 60px;">
+                <table class="halfwidth marauto" width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
                   <tr>                    
                     <!-- left side text starts -->
-                    <td width="300" valign="top">
+                    <td class="halfwidth marauto" width="300" valign="top">
                       <table width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">                        
                         <tr>
-                          <td width="240" style="text-align: left; line-height: 1.6;">
-                            <span style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 10px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="text-align: left; line-height: 1.6;">
+                            <span class="successrp" style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 10px;padding-left:30px;padding-right:30px;">
                               Crain Communications
                             </span>
                           </td>                            
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">Type of Engagement: </span>Resource augmentation.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">The Client request: </span>Development and testing support for multiple Scrum teams working on Drupal 7, Drupal 8 and other custom-built sites using AngularJS/other JS libraries.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">Resounces engaged: </span>Database Engineers, Manual QA/Auditors, Project Manager.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
                             <span>How did PRDXN help?</span>
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
-                            Since 2015, Crain's in-house resources have been able to focus their attention on activities and tasks that are uniquely challenging & forward thinking in-nature, because they have PRDXN's support on
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
+                            Since 2015, Crain's in-house resources have been able to focus their attention on activities and tasks that are uniquely challenging & forward thinking in-nature,
                           </td>
                         </tr>
                       </table>
                     </td>
                     <!-- left side text ends -->
                     <!-- right side image starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
+                    <td class="halfwidth marauto addpadt30" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
                         <tr>
                           <td>
-                            <img src="images/10.png" height="300px" width="300px" alt="Success Stories" />
+                            <img src="images/10.jpg" height="300px" width="300px" alt="Success Stories" />
                           </td>
                         </tr>                        
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-right: 30px;padding-top: 30px;">
-                            activities and tasks that are cleary defined and/or more routine in nature. This year, 2018, we've played a big part in Crain's transition from Drupal 7 to Drupal 8. Engineers, Manual QA/Auditors, Project Manager.
+                          <td class="successrp rempadb" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-right: 30px;padding-top: 30px;">
+                            because they have PRDXN's support on activities and tasks that are cleary defined and/or more routine in nature. This year, 2018, we've played a big part in Crain's transition from Drupal 7 to Drupal 8. Engineers, Manual QA/Auditors, Project Manager.
                           </td>
                         </tr>
                       </table>
@@ -634,31 +699,31 @@
             <!-- Product 2 Info: right image text left section ends -->
             <!-- Product 3 Info: left image text right section starts -->
             <tr>
-              <td style="border-bottom: 2px solid #cccccc; padding-top: 53px;">
-                <table width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
+              <td class="halfwidth marauto" style="border-bottom: 2px solid #cccccc; padding-top: 53px;">
+                <table class="halfwidth marauto" width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
                   <tr>
                     <!-- left side image starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
+                    <td class="halfwidth marauto" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
                         <tr>
                           <td>
-                            <img src="images/9.jpg" height="300px" width="300px" alt="Success Stories" />
+                            <img src="images/11.jpg" height="300px" width="300px" alt="Success Stories" />
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="text-align: left; padding-left: 30px;padding-top: 30px;">
+                          <td class="successrp" width="270" style="text-align: left; padding-left: 30px;padding-top: 30px;">
                             <span style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 24px;line-height: 1.6;">
                               The Economist Group
                             </span>
                           </td>                            
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 25px; padding-left: 30px;">
+                          <td class="successrp" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 25px; padding-left: 30px;">
                             <span style="color: #000; font-weight: 700;">Type of Engagement: </span>Resource augmentation and projects.
                           </td>
                         </tr>
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-left: 30px;">
+                          <td class="successrp rempadb" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-left: 30px;">
                             <span style="color: #000; font-weight: 700;">The Client request: </span>Support any/all website design and development projects received from any member of The Economist Group’s digital
                           </td>
                         </tr>
@@ -666,25 +731,25 @@
                     </td>
                     <!-- left side image ends -->
                     <!-- right side text starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">
+                    <td class="halfwidth marauto" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">
                         <tr>                        
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-top:10px;padding-left: 30px;padding-right: 30px;">
+                          <td class="successrp rempadt" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-top:10px;padding-left: 30px;padding-right: 30px;">
                              marketing team, globally.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-left: 30px;padding-right: 30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 24px;padding-left: 30px;padding-right: 30px;">
                             <span style="color: #000; font-weight: 700;">Resounces engaged: </span>WordPress Developers, Drupal Developers, Front-end Engineers, Testers, Project Manager.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left: 30px;padding-right: 30px;">
+                          <td class="successrp" width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left: 30px;padding-right: 30px;">
                             <span>How did PRDXN help?</span>
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left: 30px;padding-right: 30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left: 30px;padding-right: 30px;">
                             Since 2017 we’ve helped The Economist Group create and launch 19 WordPress websites and maintained/enhanced 5 websites (WordPress & Drupal). The work executed has differed in size and complexity, but we’ve particularly enjoyed some of the following highlights: World Ocean Initiative; The Economist e.ON Website (including the data visualisation work required); and the attention to detail needed by all involved to the analytics requirements for each and every site/property, including the implementation/monitoring.
                           </td>
                         </tr>
@@ -698,41 +763,41 @@
             <!-- Product 3 Info: left image text right section ends -->
             <!-- Product 4 Info: right image text left section starts -->
             <tr>
-              <td style="padding-top: 60px;">
-                <table width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
+              <td class="halfwidth marauto addpadt40" style="padding-top: 60px;">
+                <table class="halfwidth marauto" width="600" cellpadding="0" valign="top" cellspacing="0" border="0" align="center" style="padding-bottom: 40px;">
                   <tr>
                     <!-- left side text starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">                        
+                    <td class="halfwidth marauto" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="top" cellspacing="0" border="0">                        
                         <tr>
-                          <td width="240" style="text-align: left; line-height: 1.6;padding-top: 15px;">
-                            <span style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block; padding-bottom: 10px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" class="rempadt" width="240" style="text-align: left; line-height: 1.6;padding-top: 15px;">
+                            <span class="successrp" style="font-size: 21px;font-family: sans-serif; font-weight: 800;display: block; padding-bottom: 10px;padding-left:30px;padding-right:30px;">
                               Kidadl
                             </span>
                           </td>                            
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">Type of Engagement: </span>Project/Mobile application build.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">The Client request: </span>Support the MVP (and post MVP) build-out of an event-booking mobile app targeted towards parents and families in London.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px;padding-left:30px;padding-right:30px;">
                             <span style="color: #000; font-weight: 700;">Resounces engaged: </span>Front-end Engineers, Back-end Engineers, Tech Lead, Testers, Product Manager.
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #000; font-family: sans-serif; font-size: 15px; font-weight: 700; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
                             <span>How did PRDXN help?</span>
                           </td>
                         </tr>
                         <tr>
-                          <td width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
+                          <td class="successrp" width="240" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-left:30px;padding-right:30px;">
                             PRDXN devoted an Agile/Scrum team to design and execute Kidadl’s product roadmap. The 2-week Sprint schedule (within a Scrumfall framework) included
                           </td>
                         </tr>
@@ -740,15 +805,15 @@
                     </td>
                     <!-- left side text ends -->
                     <!-- right side image starts -->
-                    <td width="300" valign="top">
-                      <table width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
+                    <td class="halfwidth marauto addpadt30" width="300" valign="top">
+                      <table class="halfwidth marauto" width="100%" cellpadding="0" valign="center" cellspacing="0" border="0">
                         <tr>
                           <td>
-                            <img src="images/10.png" height="300px" width="300px" alt="Success Stories" />
+                            <img src="images/12.jpg" height="300px" width="300px" alt="Success Stories" />
                           </td>
                         </tr>                        
                         <tr>
-                          <td width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-right: 30px;padding-top: 30px;">
+                          <td class="successrp" width="270" style="color: #9a9a9a; font-family: sans-serif; font-size: 15px; text-align: left; line-height: 1.6; display: block;padding-bottom: 15px; padding-right: 30px;padding-top: 30px;">
                             daily standups, grooming, planning, pointing and retrospectives. PRDXN also helped the Client with the tech-stack decision making. The technologies involved in this project included: React, Node.js, MongoDB, KeystoneJS, Selenium, Mocha and Chai, Swagger.
                           </td>
                         </tr>
@@ -767,19 +832,19 @@
       <!-- Other clients section start here -->
       <tr>
         <td>
-          <table width="600" class="our-client" bgcolor="#f2f4f3" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 40px;">
+          <table class="width440 marauto" width="600" class="our-client" bgcolor="#f2f4f3" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 40px;">
             <!-- Other Clients text starts -->
             <tr>
-                <td width="100%" style="text-align: center;">
-                    <span style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 11px;">
-                        Other Clients
-                    </span>
-                </td>
+              <td class="width440 marauto" width="100%" style="text-align: center;">
+                <span class="titlefsize" style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;padding-bottom: 11px;">
+                    Other Clients
+                </span>
+              </td>
             </tr>
             <!-- Other Clients text ends -->
             <!-- blue underline starts -->
             <tr>
-              <td width="600" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
+              <td class="width440 marauto" width="600" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
                 <span class="blue_underline" style="display: inline-block;background-color: #1f95f2;height: 2px;width: 92px;text-align: center;"></span>
               </td>
             </tr>
@@ -787,19 +852,19 @@
             <!-- Client content starts here -->
             <tr>
               <td>
-                <table width="600" class="clients" cellpadding="0" cellspacing="0" border="0" align="center" style="font-weight: 600;font-size: 22px;padding-bottom: 45px;">
+                <table class="width440 marauto" width="600" class="clients" cellpadding="0" cellspacing="0" border="0" align="center" style="font-weight: 600;font-size: 22px;padding-bottom: 45px;">
                   <tr>
-                    <td width="150" style="text-align: center;">
-                      <img src="images/13.png" width="100" height="auto" alt="PWC">
+                    <td class="clientsdouble" width="150" style="text-align: center;">
+                      <img src="images/13.jpg" width="100" height="auto" alt="PWC">
                     </td>
-                    <td width="150" style="text-align: center;">
-                      <img src="images/14.png" width="100" height="auto" alt="Ameritrade">
+                    <td class="clientsdouble" width="150" style="text-align: center;">
+                      <img src="images/14.jpg" width="100" height="auto" alt="Ameritrade">
                     </td>
-                    <td width="150" style="text-align: center;">
-                      <img src="images/15.png" width="100" height="auto" alt="Vivaldi">
+                    <td class="clientsdouble" width="150" style="text-align: center;">
+                      <img src="images/15.jpg" width="100" height="auto" alt="Vivaldi">
                     </td>
-                    <td width="150" style="text-align: center;">
-                      <img src="images/16.png" width="100" height="auto" alt="Steelcase">
+                    <td class="clientsdouble" width="150" style="text-align: center;">
+                      <img src="images/16.jpg" width="100" height="auto" alt="Steelcase">
                     </td>
                   </tr>                      
                 </table>
@@ -811,23 +876,23 @@
       <!-- Other clients section ends here -->
       <!-- Our Services section starts here -->
       <tr>
-        <td width="600" style="padding-top: 52px; padding-bottom: 11px; text-align: center;">
-          <span style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;">
+        <td class="width440 marauto" width="600" style="padding-top: 52px; padding-bottom: 11px; text-align: center;">
+          <span class="titlefsize" style="font-size: 30px;font-family: sans-serif; font-weight: 800;display: block;">
               Our Services
           </span>
         </td>
       </tr>              
       <tr>
-        <td width="600" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
+        <td class="width440 marauto" width="600" style="text-align: center;height: 3px;padding-bottom: 16px; display: block;">
           <span class="blue_underline" style="display: inline-block;background-color: #1f95f2;height: 2px;width: 92px;text-align: center;"></span>
         </td>
       </tr>
       <!-- Services tablular starts -->
       <tr>
         <td>
-          <table align="center" style="font-family: sans-serif;font-size: 15px;">
+          <table class="width440 marauto" align="center" cellpadding="0" cellspacing="0" border="0" style="font-family: sans-serif;font-size: 15px;">
             <tr>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -839,7 +904,7 @@
                   </tr>
                 </table>                   
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -851,7 +916,7 @@
                   </tr>
                 </table>                   
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-single" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -865,19 +930,19 @@
               </td>
             </tr>
             <tr>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
                       &bull;
                     </td>
-                    <td valign="top" width="140px">
-                      Testing &amp; Quality Assuarance
+                    <td valign="middle" width="140px">
+                      Chatbots
                     </td>
                   </tr>
-                </table>                   
+                </table>
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -889,7 +954,7 @@
                   </tr>
                 </table>                
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-single" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -903,31 +968,31 @@
               </td>
             </tr>
             <tr>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
                       &bull;
                     </td>
                     <td valign="middle" width="140px">
-                      Chatbots
+                      Testing &amp; Quality Assuarance
                     </td>
                   </tr>
                 </table>                
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-double" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
                       &bull;
                     </td>
-                    <td valign="top" width="140px">
+                    <td valign="middle" width="140px">
                       Analytics &amp; Data Science
                     </td>
                   </tr>
                 </table>                   
               </td>
-              <td style="padding-bottom: 10px;">
+              <td class="oc-single" style="padding-bottom: 10px;">
                 <table>
                   <tr>
                     <td valign="top" style="font-size: 22px; padding-right: 5px;">
@@ -944,9 +1009,9 @@
         </td>
       </tr>
       <tr>
-        <td width="600" align="center" style="padding-top: 30px; padding-bottom: 58px">
+        <td class="width440 marauto" width="600" align="center" style="padding-top: 30px; padding-bottom: 58px">
           <a href="#FIXME" target="_blank" title="How Can We Help You?">
-            <img src="images/17.png" width="253px" height="46px" alt="How Can We Help You?" style="display: block;">
+            <img src="images/17.jpg" width="253px" height="46px" alt="How Can We Help You?" style="display: block;">
           </a>
         </td>
       </tr>
@@ -958,13 +1023,13 @@
           <table cellpadding="0" cellspacing="0" border="0" style="display: block;border: 0">
             <tr>
               <td>
-                <table class="achivements" width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f2f4f3" style="height: auto;padding-top: 50px;padding-bottom: 43px;">
+                <table class="width440 marauto" class="achivements" width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f2f4f3" style="height: auto;padding-top: 50px;padding-bottom: 43px;">
                   <tr>
-                    <td width="600" align="center"><img src="images/18.png"></td>
+                    <td width="600" align="center"><img src="images/18.jpg"></td>
                   </tr>
                   <tr>
-                    <td width="480" align="center" style="color: #000;font-family: sans-serif;font-size: 14px;padding-left: 60px;padding-right: 60px;padding-top: 20px;padding-bottom: 7px;">
-                      <span style="font-size: 22px;font-weight: bold;font-family: 'Times New Roman', 'Ancient Runes', serif;">"</span> We are so grateful to each and everyone of you! Rhank you for creating this incredible website for us... and thank you for making our worlds seem closer. <span style="font-size: 22px;font-weight: bold;font-family:  'Times New Roman', 'Ancient Runes', serif;">"</span>
+                    <td class="soulrquote" width="460" align="center" style="color: #000;font-family: sans-serif;font-size: 14px;padding-left: 70px;padding-right: 70px;padding-top: 20px;padding-bottom: 7px;line-height: 1.4;">
+                      <span style="font-size: 22px;font-weight: bold;font-family: 'Times New Roman', 'Ancient Runes', serif;">"</span> Thank you to a great team! PRDXN worked with us step-by-step to transfer our domain and also fix a serious CRM issue. They worked through the many problems--some of our own creation (Soul Ryders), staying late to figure out exactly how to fix. Today, our site and vital CRM program are back up and running. Having this back online as quickly as possible was essential--PRDXN delivered! <span style="font-size: 22px;font-weight: bold;font-family:  'Times New Roman', 'Ancient Runes', serif;">"</span>
                     </td>
                   </tr>
                   <tr>
@@ -979,16 +1044,16 @@
           </table>
         </td>
       </tr>
-      <!-- Soul Ryeders section ends here -->                
+      <!-- Soul Ryeders section ends here -->
       <!-- Footer starts here -->
       <tr>
         <td>
-          <table class="footer" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="height: 50px;font-family: sans-serif;color: #fff;background-color: #000;font-size: 13px;padding-bottom: 20px;">
+          <table class="width440 marauto" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="height: 50px;font-family: sans-serif;color: #fff;background-color: #000;font-size: 13px;padding-bottom: 20px;">
             <!-- Logo starts here -->
             <tr>
-              <td width="600" align="center">
-                <a href="#FIXME" title="PRDXN" target="_blank" style="display: block;padding-top: 20px;padding-bottom: 10px; color: #fff;">
-                  <img src="images/19.png" alt="PRDXN">
+              <td class="width440 marauto" width="600" align="center">
+                <a href="https://prdxn.com" title="PRDXN" target="_blank" style="display: block;padding-top: 20px;padding-bottom: 10px; color: #fff;">
+                  <img src="images/19.jpg" alt="PRDXN">
                 </a>
               </td>
             </tr>
